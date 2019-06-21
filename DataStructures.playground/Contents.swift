@@ -17,8 +17,21 @@ list.push(2)
 list.push(1)
 list.append(4)
 
+let sum = list.reduce(0, +)
+print(sum)
+
 var middleNode = list.node(at: 1)!
 list.insert(10, after: middleNode)
+print(list)
+
+
+print("\nPopping list: Removed \(list.pop() ?? 0) from list")
+print(list)
+
+print("\nRemove last node: Removed \(list.removeLast() ?? 0) from list")
+print(list)
+
+print("\nRemove after first node: Removed \(list.remove(after: list.node(at: 0)!)!)")
 print(list)
 
 
