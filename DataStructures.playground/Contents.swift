@@ -35,10 +35,3 @@ print("\nRemove after first node: Removed \(list.remove(after: list.node(at: 0)!
 print(list)
 
 
-var list1 = LinkedList<Int>()
-list1.append(1)
-list1.append(2)
-var list2 = list1
-list2.append(3)
-print("List 1: \(list1)")
-print("List 2: \(list2)")
