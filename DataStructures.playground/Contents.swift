@@ -1,6 +1,7 @@
 import UIKit
 
-var str = "Hello, playground"
+
+// LINKED LISTS
 
 let node1 = Node(value: "What")
 let node2 = Node(value: "Did")
@@ -34,12 +35,25 @@ print(list)
 print("\nRemove after first node: Removed \(list.remove(after: list.node(at: 0)!)!)")
 print(list)
 
-var list1 = LinkedList<Int>()
-list1.append(1)
-list1.append(2)
-var list2 = list1
-list2.append(3)
-print("List 1: \(list1)")
-print("List 2: \(list2)")
 
+// STACKS
 
+var stack = Stack<Int>()
+(0...10).forEach { (num) in
+    stack.push(num)
+}
+
+print(stack)
+
+if let poppedElement = stack.pop() {
+    print("Popped \(poppedElement)")
+}
+
+print(stack)
+
+let words = ["Hello", "Swift", "Data", "Structures"]
+var wordStack = Stack(words)
+print(wordStack)
+
+let easyWordStack: Stack = ["Hello", "Swift", "Data", "Structures"]
+print(easyWordStack)
