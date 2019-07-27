@@ -1,5 +1,7 @@
-import UIKit
+// Created by Harshdeep Kahlon
+// Updated July 2019
 
+import UIKit
 
 // LINKED LISTS
 
@@ -57,3 +59,18 @@ print(wordStack)
 
 let easyWordStack: Stack = ["Hello", "Swift", "Data", "Structures"]
 print(easyWordStack)
+
+
+// QUEUES
+print("Queues via Array")
+var queueArray = QueueArray<String>()
+queueArray.enqueue("My")
+queueArray.enqueue("name")
+queueArray.enqueue("is")
+queueArray.enqueue("Harshdeep")
+queueArray.enqueue("Kahlon")
+print(queueArray)
+queueArray.dequeue()
+queueArray.dequeue()
+print(queueArray)
+
